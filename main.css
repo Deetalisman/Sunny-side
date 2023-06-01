@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 64.2%;
+}
+:root{
+    --white:white;
+    --black:black;
+    --grey: hsl(210, 4%, 67%);
+}
+body{
+   position: relative;
+    font-family: "poppins", sans-serif;
+}
+nav{
+    background-image: url(images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+header h3{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.nav{
+    display: flex;
+}
+.nav li{
+    font-size: 1.6rem;
+    display: inline-block;
+    margin: 0.7rem 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.contact{
+    color: var(--black);
+    font-size: 1.4rem;
+    margin-left: 2.7rem;
+    background-color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+}
+.contact:hover{
+    background-color: rgba(105, 101, 101, 0.1);
+    color: var(--white);
+}
+.we{
+    margin-top: 14rem;
+    text-align: center;
+    height: 46rem;
+}
+.we h1{
+    font-size: 4rem;
+    color: var(--white);
+}
+.we img{
+    margin-top: 5rem;
+}
+.transform{
+    display: flex;
+    margin-bottom: 0;
+    height: 50rem;
+    margin-top: 0;
+}
+.trans-left{
+    width: 50%;
+    padding: 12%;
+}
+.trans-right{
+    width: 50%;
+}
+.trans-left h2{
+    font-size: 3.3rem;
+}
+.trans-left p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    line-height: 1.9rem;
+    color: var(--grey);
+    margin-bottom: 2rem;
+}
+.trans-left a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: none;
+    position: relative;
+}
+.trans-left a::after{
+    content: " ";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    display: block;
+    background-color: yellow;
+    bottom: -0.2rem;
+    left: 0.2rem;
+}
+.trans-left a:hover::after{
+    height: 0.5rem;
+
+}
+.trans-right img{
+    height: 50rem;
+    width: 100%;
+}
+.stand{
+    display: flex;
+    margin-bottom: 0;
+    height: 50rem;
+}
+#stand-learn::after{
+    background-color: red;
+}
+.apple{
+    display: flex;
+    height: 50rem;
+}
+.apple-left{
+    width: 50%;
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.app{
+    margin-bottom: 8rem;
+    text-align: center;
+    color:  hsl(167, 40%, 24%);
+    width: 28rem;
+}
+.app h2{
+    font-size: 2rem;
+}
+.app p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height: 1.9rem;
+}
+.apple-rigth{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.appr{
+    margin-bottom: 8rem;
+    text-align: center;
+    color: hsl(198, 62%, 26%);
+    width: 28rem;
+}
+.appr h2{
+    font-size: 2rem;
+}
+.appr p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height: 1.9rem;
+}
+.client{
+    text-align: center;
+    width: 80%;
+    margin: 7rem 10% 0;
+}
+.client h1{
+    font-size: 2rem;
+    color: var(--grey);
+    letter-spacing: 1rem;
+}
+.client-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top:5rem ;
+}
+.cl img{
+    width: 4rem;
+    border-radius: 50%;
+}
+.clp{
+    font-size: 1.4rem;
+    color: hsl(213, 9%, 39%);
+    width: 90%;
+    margin-top: 2rem;
+}
+.name{
+    margin-top: 4rem;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+}
+.post{
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    color: hsl(213, 9%, 39%);
+}
+.parallel{
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+}
+.parallel img{
+    width: 25%;
+}
+.feet{
+    background-color:rgb(125, 194, 171);
+}
+.foot{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+}
+.foot h1{
+    font-size: 2rem;
+    color:hsl(167, 40%, 24%);
+}
+.nav2{
+    margin-top: 2rem;
+}
+.nav2 li{
+    display: inline-block;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    color:hsl(167, 40%, 24%);
+    cursor: pointer;
+}
+.nav2 li:hover{
+    color: var(--white);
+}
+.symbol{
+    margin-top: 3rem;
+}
+.symbol img{
+    margin: 0 0.7rem;
+    cursor: pointer;
+}
+#ham{
+    display: none;
+}
+@media screen and (max-width:900px) {
+    .transform{
+        height: 40rem;
+    }
+    .trans-right img{
+        height: 40rem;
+
+    }
+    .trans-left{
+        padding: 9%;
+    }
+}
+@media screen and (max-width:900px) {
+    .transform{
+        height: 35rem;
+    }
+    .trans-right img{
+        height: 35rem;
+    }
+    .trans-left{
+        padding: 6%;
+    }
+    .stand{
+        height: 35rem;
+    }
+    .app{
+        width: 22rem;
+    }
+    .appr{
+        width: 22rem;
+    }
+    .client h1{
+        font-size: 2rem;
+        letter-spacing: 0.7rem;
+    }
+    .client{
+        text-align: center;
+        width: 90%;
+        margin: 7rem 5% 0;
+    }
+}
+@media screen and (max-width:600px) {
+    header{
+        padding: 2rem 4%;
+    }
+    nav{
+        background-image: url(images/mobile/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    #ham{
+        display: block;
+        width: 3rem;
+        cursor: pointer;
+    }
+    .nav{
+        position: absolute;
+        background-color: var(--white);
+        display: block;
+        width: 90%;
+        top: 7rem;
+        text-align: center;
+        display: none;
+    }
+    .nav li{
+        color: var(--grey);
+        display: block;
+        margin: 2.5rem 0;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    .contact{
+        color: var(--black);
+        font-size: 1.4rem;
+        margin-left: 0;
+        text-transform: uppercase;
+        background-color: yellow;
+        padding: 1.3rem 1.5rem;
+        border-radius: 2rem;
+        width: 10rem;
+        margin: 2rem auto;
+        font-weight: 700;
+        text-align: center;
+    }
+    .we h1{
+        font-size: 5rem;
+        color: var(--white);
+        font-weight: 300;
+    }
+    .we{
+        margin-top: 20rem;
+        text-align: center;
+        height: 46rem;
+    }
+    
+    .we img{
+        margin-top: 4rem;
+    }
+    .transform{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .trans-left{
+        width: 100%;
+        text-align: center;
+        padding: 5% 10%;
+        height: 35rem;
+    }
+    .trans-right{
+        width: 100%;
+    }
+    .trans-right img{
+        height: 37rem;
+    }
+    .trans-left h2{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .trans-left p{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    .stand{
+        display: block;
+        height: auto;
+    }
+    .apple{
+        display: block;
+        height: 80rem;
+    }
+    .apple-left{
+        width: 100%;
+        height: 40rem;
+    }
+    .apple-rigth{
+        width: 100%;
+        height: 40rem;
+    }
+    .client{
+        width: 100%;
+        margin: 3rem 0 0;
+
+    }
+    .client-div{
+        display: block;
+        margin-top: 3rem;
+    }
+    .client h1{
+        font-size: 1.5rem;
+    }
+    .cl{
+        padding: 0 5%;
+        margin-bottom: 5rem;
+    }
+    .clp{
+        font-size: 1.4rem;
+        color: hsl(213, 9%, 39%);
+        width: 100%;
+        margin-top: 1.4rem;
+    }
+    .name{
+        margin-top: 1rem;
+    }
+    .post{
+        margin-top: 0.2rem;
+    }
+    .parallel{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .parallel img{
+        width: 50%;
+    }
+    .feet{
+        padding-bottom: 3rem;
+    }
+    .foot{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2rem;
+    }
+    .foot h1{
+        margin-top: 2rem;
+    }
+    .nav2{
+        margin-top: 3rem;
+    }
+    .symbol{
+        margin-top: 5rem;
+    }
+    .app{
+        margin-bottom: 4rem;
+    }
+    .appr{
+        margin-bottom: 4rem;
+    }
+    .show{
+        display: block;
+    }
+}
